@@ -27,6 +27,9 @@ function n=checkStar(board,x,y)
                 end
             end
         end
+    catch
+    end
+    try
         % UpRight
         if board(y+1,x+1)==player
             n=2;
@@ -38,6 +41,9 @@ function n=checkStar(board,x,y)
                 end
             end
         end
+    catch
+    end
+    try
         % Up
         if board(y+1,x)==player
             n=2;
@@ -49,6 +55,9 @@ function n=checkStar(board,x,y)
                 end
             end
         end
+    catch
+    end
+    try
         % UpLeft
         if board(y+1,x-1)==player
             n=2;
@@ -60,6 +69,9 @@ function n=checkStar(board,x,y)
                 end
             end
         end
+    catch
+    end
+    try
         % Left
         if board(y,x-1)==player
             n=2;
@@ -71,6 +83,9 @@ function n=checkStar(board,x,y)
                 end
             end
         end
+    catch
+    end
+    try
         % DownLeft
         if board(y-1,x-1)==player
             n=2;
@@ -82,6 +97,9 @@ function n=checkStar(board,x,y)
                 end
             end
         end
+    catch
+    end
+    try
         % Down
         if board(y-1,x)==player
             n=2;
@@ -93,6 +111,9 @@ function n=checkStar(board,x,y)
                 end
             end
         end
+    catch
+    end
+    try
         % DownRight
         if board(y-1,x+1)==player
             n=2;
@@ -103,9 +124,7 @@ function n=checkStar(board,x,y)
                     return
                 end
             end
-        end
-            
+        end 
     catch
-        
     end
 end
