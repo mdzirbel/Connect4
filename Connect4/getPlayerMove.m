@@ -1,9 +1,9 @@
-function i = getPlayerMove(player,first,notAllowed,blackBoard,blueBoard)
+function i = getPlayerMove(player,first,board)
     %Checks whether to get the human player or computer player then gets
     %their move
     if player==first
-        i=getHumanPlayerMove(notAllowed);
+        i=getHumanPlayerMove(board);
     else
-        i=getComputerPlayerMove(blackBoard,blueBoard);
+        i=getComputerPlayerMove(board);
     end
 end

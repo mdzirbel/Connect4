@@ -1,4 +1,5 @@
-function allowed = checkForAllowed(move,notAllowed)
+function allowed = checkForAllowed(move,board)
+    notAllowed = board(6,:);
     allowed = 0;
     if ~notAllowed(move)
         allowed = 1;
