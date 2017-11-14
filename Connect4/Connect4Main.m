@@ -1,6 +1,7 @@
 clc;clear;
 
-board = [];
+blackBoard = [];
+blueBoard = [];
 first = setPlayerOrder();
 drawBoard(); %Graphics
 while 1
