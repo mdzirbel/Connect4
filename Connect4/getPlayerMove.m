@@ -4,6 +4,6 @@ function i = getPlayerMove(player,first,board)
     if player==first
         i=getHumanPlayerMove(board);
     else
-        i=getComputerPlayerMove(board);
+        i=getComputerPlayerMove(board,player);
     end
 end
